@@ -1,0 +1,146 @@
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height:0.5;
+    --primary-blue: #233975;
+}
+boby{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight:700;
+}
+p{
+    font-size: 1.5rem;
+    font-weight:700;
+}
+a{
+    text-decoration: none;
+    color:var(--primary-blue);
+}
+a:hover{
+    
+text-decoration: underline;
+}
+
+.small{
+    font-size:80%;
+    text-align:center;
+    }
+    .input-content-cta {
+        margin-bottom: 15px;    
+    }
+    .float-r{
+        float: right;
+    }
+    
+    .left{
+        height: 200px;
+    }
+    .left, .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+    .left{
+        height: -webkit-fill-available;
+        background:  url('bg-img.jpg');
+        background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+    }
+    .left .copy{
+        color:white;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .left p{
+        font-weight: 400;
+    }
+    .right .copy{
+        color: black;
+        text-align: center;
+    }
+    .right .copy p{
+        margin: 1.5em 0;
+        font-size: 0.875rem;
+    }
+    .right form{
+    width :328px;
+    }
+    form input[type="text"],
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1ex;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size:0.75rem;
+}
+input-container.password{
+    position: relative;
+}
+.checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.signup-btn{
+    display: block;
+    width: 100%;
+    background: #014412;
+    color:white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.signup-btn:hover{
+    background: #92959e;
+    cursor: pointer;
+}
+.signup-google{
+    display: block;
+    width: 100%;
+    background: #f7f7f8;
+    color:rgba(85, 71, 71, 0.774);
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.signup-google:hover{
+    background: #737886;
+    cursor: pointer;
+}
+@media screen and (min-width:100px) {
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left,
+    .right{
+        /* display: auto; */
+        width: 50%;
+        float: right;
+    }
+}
